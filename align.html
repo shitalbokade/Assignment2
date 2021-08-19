@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of CSS3 align-content Property</title>
+<style>
+	.flex-container {
+		height: 300px;
+		width: 200px;
+		font-size: 32px;
+		border: 1px solid black;
+		/* Safari */
+		display: -webkit-flex; 
+		-webkit-flex-flow: row wrap;
+		-webkit-align-content: space-around;
+		/* Standard syntax */
+		display: flex;
+		flex-flow: row wrap;
+		align-content: space-around;
+	}
+	.flex-container div {
+		height: 75px;
+		width: 200px;
+	}
+	.item1 {
+		background: #e7e981;
+	}
+	.item2 {
+		background: #caf7a5;
+	}
+	.item3 {
+		background: #a3c4e6;
+	}
+</style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+    </div>
+</body>
+</html>
